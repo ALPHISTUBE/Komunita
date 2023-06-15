@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.content{
+    display: flex;
+}
+
+.ChatBox{
+    flex: 1;
+    position: fixed;
+    width: 300px;
+    height: 60vh;
+    background: #2f3542;
+    box-shadow: 10px 60px 40px black;
+    border-radius: 0 20px 20px 0;
+    border: 2px solid gray;
+    border-left: none;
+}
+
+.PostBox{
+    flex: 2;
+    height: 100vh;
+    margin-left: 300px;
+}

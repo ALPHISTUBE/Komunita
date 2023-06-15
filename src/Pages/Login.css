@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+.BorderBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('E:\Alphi\Tutorial\Web_Development\komunita\public\login-background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid #3ca7ffcc;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    transition: 0.1s;
+}
+
+h2:hover{
+    transform: translateX(100px);
+}
+
+.inputBox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #3ca7ffcc;
+}
+
+.inputBox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+input:hover~label{
+    top: -5px;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.inputBox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.errorMsg{
+    position: absolute;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgb(212, 0, 0);
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.logButton{
+    margin-left: 220px;
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: hsla(207, 100%, 62%, 0.7);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 700;;
+    color: white;
+    transition: 0.2s;
+}
+
+.logButton:hover{
+    width: 35%;
+    height: 50px;
+    margin-left: 210px;
+}
+
+.register{
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 50px 0 10px;
+}
+
+.register p{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #3ca7ffcc;
+    font-weight: 700;
+}
+
+.register p a:hover{      
+    text-decoration: underline;
+    cursor: pointer;
+}
